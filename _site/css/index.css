@@ -1,0 +1,17 @@
+html {
+    font-size: 62%
+    }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.8rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
