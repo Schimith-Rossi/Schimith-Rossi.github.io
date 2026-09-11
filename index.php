@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Schimith Pages</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/index.css">
+
+    </head>
+    <body>
+        <form action="" method="POST">
+             <div class="nome">
+                 <label for="nome">Nome:</label>
+                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+             </div>
+  
+             <div class="email">
+                 <label for="email">E-mail:</label>
+                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+             </div>
+
+             <div class="telefone">
+                 <label for="telefone">Telefone:</label>
+                 <input type="telefone" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+             </div>
+
+             <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
+        <?php
+         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $nome = $_POST["nome"];
+            $email = $_POST["email"];
+            $telefone = $_POST["telefone"];
+
+            echo "nome recebido" . $nome;
+            echo "E-mail recebido" . $email;
+            echo "telefone recebido" . $telefone;
+         }
+
+         ?>
+    </body>
+</html>
